@@ -1,7 +1,7 @@
 import axios from "axios";
 
-import { store } from "base/Redux/configureStore";
-import { ACT_SignOut } from "base/Redux/action-creators";
+import {store} from "base/Redux/configureStore";
+import {ACT_SignOut} from "base/Redux/action-creators";
 
 export default function ajaxRequest(request) {
   return new Promise((resolve, reject) => {
