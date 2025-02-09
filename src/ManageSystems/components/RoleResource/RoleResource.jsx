@@ -16,7 +16,7 @@ const RoleResource = () => {
     endpoint: "/api/clients",
   });
   const { response: menus } = useGetApiCall({
-    endpoint: `/api/menus/client-id?clientId=${selectedClientId}`,
+    endpoint: `/api/menus/client-id/${selectedClientId}`,
     enabled: !!selectedClientId,
   });
   const { response: resources } = useGetApiCall({
